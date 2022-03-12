@@ -2,6 +2,7 @@ name: Docker Image Publish to Docker Hub
 
 on:
   push:
+    branches: [ masum ]
 
 jobs:
   build:
@@ -27,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/abc:masum
+          tags: ${{ secrets.DOCKER_USERNAME }}/abc:${{github.ref_name}}
