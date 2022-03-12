@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/abc:zohir
+          tags: ${{ secrets.DOCKER_USERNAME }}/abc:${{github.ref_name}}
