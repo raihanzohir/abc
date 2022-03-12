@@ -27,4 +27,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: masum
+          tags: ${{ secrets.DOCKER_USERNAME }}/abc:masum
