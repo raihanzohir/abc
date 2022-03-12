@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Docker Image Publish to Docker Hub
 
 on:
   push:
@@ -27,4 +27,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/abc:${{github.ref_name }}
+          tags: masum
