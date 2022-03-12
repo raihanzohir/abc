@@ -2,7 +2,7 @@ name: Docker Image Publish to Docker Hub
 
 on:
   push:
-    branches: [ masum ]
+    branches: [ zohir ]
 
 jobs:
   build:
